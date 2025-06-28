@@ -9,7 +9,9 @@ if port < 1024 or port > 65535:
     print("Invalid port number. Please enter a port number between 1024 and 65535.")
     exit(1)
 
+print("Enter the role(publisher or subscriber) ")
 role = input() # 'publisher' or 'subscriber'
+
 if role not in ['publisher', 'subscriber']:
     print("Invalid role. Please enter 'publisher' or 'subscriber'.")
     exit(1)
